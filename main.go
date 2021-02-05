@@ -73,6 +73,7 @@ func HandleLambdaEvent(
 		if err != nil {
 			return res, err
 		}
+		return res, nil
 	case req.HTTPMethod == "GET":
 		// handle GET request
 		res = HandleGet()
